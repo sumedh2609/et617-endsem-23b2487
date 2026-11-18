@@ -81,6 +81,7 @@ Aarav believes that doubling the launch speed (u → 2u) doubles the range (R �
 | **T6** Speed experiment & comparison | 4 Mission 2 | F1 | Launches u = 10 and u = 20; sees comparison bars (prediction vs 10 m vs 40 m, split into 10 m blocks) and a data table (vx, time in air, range). | vx: 7.1 → 14.1 (×2), time: 1.41 s → 2.83 s (×2), range: 10 → 40 (×4). |
 | **T7** Explain + AI Inquiry Coach | 4 Mission 2 | F4 | Writes a one-sentence explanation (Marathi or English) of why range quadrupled; asks the coach; revises and asks again. | "Doubling the speed doubles the forward speed **and** doubles the time in the air, so the range becomes 2 × 2 = 4 times." |
 | **T8** Transfer challenge | 4 Mission 2 | F3 + F1 | "At 45°, speed tripled to 30 m/s: range?" Then verifies with a launch. | 90 m (3² = 9 × 10 m). |
+| **T8b** Practice set (6 everyday examples) | Practice | F3 + F1 | Four "predict the range" items: the learner picks an answer and the ball launches at once to check it, with option-specific feedback. Two "hit the target" items: fixed speed, find an angle (with an over/short hint). After each launch, the step-by-step physics working is shown. Contexts: football kick at 30° and 60°, fielder's throw, shot put, batter's shot, garden sprinkler. | 30° and 60° at 20 m/s → 34.6 m (complementary angles); 20 m target at 20 m/s → 15° or 75°; shot put 45°, 15 m/s → 22.5 m (u²/10); 60° speed ×3 → range ×9 (8.7 → 77.9 m); 50 m at 25 m/s → ≈ 27° or 63°. |
 | **T9** Reflection | 5 Reflection | F5 | Sees experiments run, hypotheses revised, hints used, ideas that changed; re-rates confidence; optionally writes one thing learned. | Free (self-efficacy tracking: start vs end rating). |
 
 ### Targeted feedback (exact app text)
@@ -153,8 +154,9 @@ Hypotheses: **h75** "75° will go farthest because it goes highest" (M1) · **h4
    - *Hint 1 (evidence):* a vx/vy split bar for *his* angle: "At your angle: forward speed 5.2 m/s, upward speed 19.3 m/s. Out of 20 m/s, how much was left for moving forward?"
    - *Hint 2 (strategy):* "Change the angle by only 5° at a time and check whether the distance grew or shrank. Keep moving in the direction where it grows." This teaches control-of-variables search, not the answer.
 6. **Next experiment narrowed, not given:** "Try an angle between 35° and 55° next and record what happens to the distance."
-7. **Hypothesis revision gate.** Before the next launch he has to either pick a revised hypothesis or consciously keep his current one ("keep my hypothesis but test another angle"). A change increments `revisions` and shows "अंदाज सुधारला! हा खरा वैज्ञानिक विचार आहे. 🌱". This makes the **Revise** step of the cycle explicit and visible in the reflection.
-8. **Success belongs to the learner.** When a later shot lands (e.g. at 45°), the success card says that *his experiments* found a better angle than his first hypothesis. He is then challenged to find which nearby angle goes the absolute farthest, and given the complementary-angle check (T4).
+7. **Hypothesis revision gate, in one click.** The next launch is enabled once he has answered the "why?" question. The revision panel lists the hypotheses again, and choosing one moves the angle slider to the angle it names. A single 🚀 button then saves the revised (or consciously kept) hypothesis *and* launches. A change increments `revisions` and shows "अंदाज सुधारला! हा खरा वैज्ञानिक विचार आहे. 🌱". This keeps the **Revise** step explicit without adding clicks.
+8. **The physics behind it.** Under the canvas, a step-by-step panel works through his own shot: vx = u cos θ, vy = u sin θ, T = 2vy/g, H = vy²/2g, R = vx × T and R = u² sin 2θ / g, each with his numbers substituted in (e.g. 20 × cos 75° = 20 × 0.26 = 5.18 m/s). The one line that would give the answer away ("sin 2θ is biggest when θ = 45°") stays locked as a question until the ball lands in the basket.
+9. **Success belongs to the learner.** When a later shot lands (e.g. at 45°), the success card says that *his experiments* found a better angle than his first hypothesis. He is then challenged to find which nearby angle goes the absolute farthest, and given the complementary-angle check (T4).
 
 Shots that miss at shallow angles (e.g. 30°, h30) get a mirrored card ("moved forward fast but landed quickly"). Shots that miss near the target get a fine-tuning card.
 
@@ -164,7 +166,8 @@ Shots that miss at shallow angles (e.g. 30°, h30) get a mirrored card ("moved f
 
 - **Colour language:** teal, sky and amber only; no red anywhere. Misses use the same calm card style as hits.
 - **Persistent reassurance badge:** "चुका म्हणजे नवे शोध • Mistakes are discoveries" stays in the top bar.
-- **Equations on demand:** the sandbox's "गणित पाहायचं आहे? (ऐच्छिक)" corner is collapsed by default.
+- **Equations after experience:** the sandbox's "गणित पाहायचं आहे? (ऐच्छिक)" corner is collapsed by default. In the missions, formulas appear only *after* a launch, worked out with the learner's own numbers and a plain-language meaning for each line, so they explain something he has just seen rather than standing as a wall of symbols.
+- **Low-click flow and a step guide:** each mission shows a "what to do now" strip (e.g. Choose a hypothesis → Launch → Think about the result → Ball in the basket!). Choosing a hypothesis sets the angle. In Mission 2 a single button launches both balls (10 then 20 m/s), and the first launch also saves the prediction.
 - **Free navigation:** every screen is reachable at any time; nothing is locked except launching without a hypothesis (pedagogically necessary).
 - **Visible progress:** step navigator, experiment log, reflection dashboard with start vs end confidence.
 - **Small, friendly numbers:** g = 10 m/s², u = 10/20/30 m/s, target at 40 m.
